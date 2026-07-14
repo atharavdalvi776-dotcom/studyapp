@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Study App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>⚡ Study Room</h1>
+
+        <!--TIMER SECTION -->
+        <section class="card timer-section">
+            <h2>Timer</h2>
+            <div class="timer-display" id="timer">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn" onclick="toggleTimer()">Start</button>
+                <button id="reset-btn" onclick="resetTimer()">Reset</button>
+            </div>
+        </section>
+
+        <!-- FLASHCARD SECTION -->
+        <section class="card flashcard-section">
+            <h2>Flashcards</h2>
+            <div class="flashcard" id="flashcard" onclick="flipCard()">
+                <div class="card-inner" id="card-inner">
+                    <div class="card-front">
+                        <p id="question">Tap to see the question!</p>
+                    </div>
+                    <div class="card-back">
+                        <p id="answer">Tap to see the answer!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flashcard-controls">
+                <button onclick="nextCard()">Next Card ➡️</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
